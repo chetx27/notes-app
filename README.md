@@ -10,12 +10,16 @@ A modern, full-stack notes application built with React and Express.js. Write an
 
 - **📝 Markdown Editor**: Write notes in Markdown with instant live preview using React Markdown.
 - **🏷️ Tagging System**: Add custom tags to categorize and organize your notes.
-- **💾 Persistent Storage**: Save notes to a backend server and automatically load the latest note on app startup.
+- **💾 Persistent Storage**: Save notes to a backend server with timestamps.
 - **🔄 Real-time Preview**: See your Markdown rendered in real-time as you type.
 - **📱 Responsive Design**: Clean, minimal UI that works seamlessly on desktop, tablet, and mobile devices.
 - **⚡ Fast Performance**: Lightweight and optimized for quick loading and smooth interactions.
 - **🔒 CORS Enabled**: Secure cross-origin requests between frontend and backend.
 - **🛠️ Easy Setup**: Simple installation and running with npm scripts.
+- **📋 Notes Management**: View all notes in a sidebar, search by content or tag, select and edit notes.
+- **🗑️ Delete Notes**: Remove unwanted notes with a single click.
+- **🔍 Search Functionality**: Find notes quickly by searching content or tags.
+- **📅 Timestamps**: Each note includes creation timestamp for better organization.
 
 ## 🛠️ Tech Stack
 
@@ -86,17 +90,24 @@ This creates an optimized build in the `build` folder, ready for deployment.
 
 ## 📖 Usage
 
-1. **Writing Notes**: Type your content in the Markdown editor textarea.
+1. **Writing Notes**: Type your content in the Markdown editor textarea on the right.
 2. **Adding Tags**: Enter a tag in the input field below the editor.
 3. **Saving Notes**: Click the "Save Note" button to persist your note to the server.
-4. **Loading Notes**: Refresh the page or restart the app to load the most recently saved note.
-5. **Preview**: See your formatted Markdown in the preview section instantly.
+4. **Viewing All Notes**: Use the sidebar on the left to see all saved notes.
+5. **Searching Notes**: Use the search bar in the sidebar to filter notes by content or tag.
+6. **Selecting Notes**: Click on any note in the sidebar to load it into the editor.
+7. **Creating New Notes**: Click "New Note" to start a fresh note.
+8. **Deleting Notes**: Click the "Delete" button next to any note to remove it.
+9. **Preview**: See your formatted Markdown in the preview section instantly.
 
-### Example Usage
+### Example Workflow
 
-- Write: `# My Note Title`
+- Click "New Note" to start fresh.
+- Write: `# My Project Ideas`
 - Add tag: `work`
-- Save and see it rendered as a heading in the preview.
+- Save the note.
+- Create another note with different content.
+- Use search to find notes by tag or keyword.
 
 ## 🔌 API Endpoints
 
@@ -104,13 +115,15 @@ The backend provides the following RESTful API endpoints:
 
 ### GET /notes
 - **Description**: Retrieves all saved notes.
-- **Response**: JSON array of notes (currently returns the latest note).
+- **Response**: JSON array of notes with id, markdown, tag, and timestamp.
 - **Example Response**:
   ```json
   [
     {
+      "id": 1,
       "markdown": "# Sample Note\nThis is a sample note.",
-      "tag": "sample"
+      "tag": "sample",
+      "timestamp": "2025-12-15T10:30:00.000Z"
     }
   ]
   ```
@@ -118,6 +131,7 @@ The backend provides the following RESTful API endpoints:
 ### POST /notes
 - **Description**: Saves a new note.
 - **Request Body**: JSON object with `markdown` and `tag` properties.
+- **Response**: The saved note object with id and timestamp.
 - **Example Request**:
   ```json
   {
@@ -125,7 +139,20 @@ The backend provides the following RESTful API endpoints:
     "tag": "personal"
   }
   ```
-- **Response**: The saved note object.
+- **Example Response**:
+  ```json
+  {
+    "id": 2,
+    "markdown": "# New Note\nContent here.",
+    "tag": "personal",
+    "timestamp": "2025-12-15T10:35:00.000Z"
+  }
+  ```
+
+### DELETE /notes/:id
+- **Description**: Deletes a note by ID.
+- **Response**: Success message or 404 if not found.
+- **Example**: `DELETE /notes/1`
 
 ## 📁 Project Structure
 
