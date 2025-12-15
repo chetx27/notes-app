@@ -25,7 +25,7 @@ A modern, full-stack notes application built with React and Express.js. Write an
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/notes-app.git
+   git clone https://github.com/chetx27/notes-app-.git
    cd notes-app
    ```
 
