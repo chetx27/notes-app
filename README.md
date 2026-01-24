@@ -6,7 +6,7 @@
 
 A modern, full-stack notes application built with React and Express.js. Write and preview Markdown notes with tagging functionality, search capabilities, dark mode, and offline support via localStorage backup.
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 - **Markdown Editor**: Write notes with full Markdown support and live preview
@@ -14,7 +14,7 @@ A modern, full-stack notes application built with React and Express.js. Write an
 - **RESTful API**: Backend API for persistent note storage
 - **Export Notes**: Download all notes as JSON for backup or migration
 
-### New Features 🎉
+### New Features 
 - **🔍 Real-time Search**: Filter notes instantly by title or tags
 - **🌓 Dark Mode**: Toggle between light and dark themes with persistent preferences
 - **💾 Offline Backup**: Automatic localStorage backup for offline functionality
@@ -22,13 +22,13 @@ A modern, full-stack notes application built with React and Express.js. Write an
 - **⚡ Performance**: Optimized rendering and state management
 - **🎨 Enhanced UI**: Beautiful, modern interface with smooth animations
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have installed:
 - **Node.js** (v16.0.0 or higher)
 - **npm** (comes with Node.js)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation
 
@@ -57,7 +57,7 @@ Before you begin, ensure you have installed:
    ```
    The app will open in your browser at `http://localhost:3000`
 
-## 🎯 Usage Guide
+## Usage Guide
 
 ### Creating Notes
 1. Click the **"+ New Note"** button in the sidebar
@@ -98,7 +98,7 @@ Before you begin, ensure you have installed:
   - Edit and delete notes
 - Changes sync automatically when connection is restored
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### GET /notes
 - **Description**: Retrieve all notes
@@ -122,7 +122,7 @@ Before you begin, ensure you have installed:
 - **Response**: Success message or 404 if not found
 - **Example**: `DELETE http://localhost:5000/notes/1`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 notes-app/
@@ -148,7 +148,7 @@ notes-app/
 └── package-lock.json           # Dependency lock file
 ```
 
-## 🎨 Markdown Support
+## Markdown Support
 
 The editor supports standard Markdown syntax:
 
@@ -161,7 +161,7 @@ The editor supports standard Markdown syntax:
 - **Quotes**: `> quote`
 - And more!
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 - **React** 18.2.0 - UI library
@@ -176,7 +176,7 @@ The editor supports standard Markdown syntax:
 - In-memory storage (server-side)
 - LocalStorage (client-side backup)
 
-## 🚀 Deployment
+## Deployment
 
 ### Backend Deployment
 Deploy the Express server to platforms like:
@@ -198,7 +198,7 @@ Deploy the Express server to platforms like:
    - GitHub Pages
    - Any static hosting service
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Port already in use
 If port 5000 is already in use, modify `server.js`:
@@ -225,7 +225,7 @@ app.use(cors({
 - Check browser privacy settings
 - Clear cache and try again
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -235,23 +235,23 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **chetx27**
 - GitHub: [@chetx27](https://github.com/chetx27)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with React and Express.js
 - Markdown rendering by react-markdown
 - Icons from Unicode emoji
 - Inspired by modern note-taking applications
 
-## 📝 Changelog
+## Changelog
 
 ### Version 2.0.0 (Latest)
 - ✨ Added real-time search functionality
