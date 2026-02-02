@@ -254,13 +254,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Changelog
 
 ### Version 2.0.0 (Latest)
-- ✨ Added real-time search functionality
-- ✨ Added dark mode with theme persistence
-- ✨ Added localStorage backup for offline support
-- 🎨 Complete UI redesign with modern styling
-- ⚡ Performance improvements
-- 📱 Enhanced mobile responsiveness
-- 🐛 Various bug fixes
+-  Added real-time search functionality
+-  Added dark mode with theme persistence
+-  Added localStorage backup for offline support
+-  Complete UI redesign with modern styling
+-  Performance improvements
+-  Enhanced mobile responsiveness
+-  Various bug fixes
 
 ### Version 1.0.0
 - Initial release with basic note-taking functionality
@@ -271,4 +271,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-⭐ If you find this project useful, please consider giving it a star on GitHub!
+If you find this project useful, please consider giving it a star on GitHub!
