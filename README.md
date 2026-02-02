@@ -63,7 +63,7 @@ Before you begin, ensure you have installed:
 1. Click the **"+ New Note"** button in the sidebar
 2. Write your content using Markdown syntax in the editor
 3. Add an optional tag for organization
-4. Click **"💾 Save Note"** to persist your note
+4. Click **" Save Note"** to persist your note
 
 ### Searching Notes
 - Use the search bar at the top of the sidebar
@@ -82,11 +82,11 @@ Before you begin, ensure you have installed:
 3. Save to update the note
 
 ### Deleting Notes
-- Click the 🗑️ icon on any note card
+- Click the (trash) icon on any note card
 - Confirm the deletion in the dialog
 
 ### Exporting Notes
-- Click **"📥 Export"** in the sidebar
+- Click **" Export"** in the sidebar
 - All notes are downloaded as a timestamped JSON file
 - Useful for backup or migration purposes
 
