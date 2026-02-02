@@ -15,12 +15,12 @@ A modern, full-stack notes application built with React and Express.js. Write an
 - **Export Notes**: Download all notes as JSON for backup or migration
 
 ### New Features 
-- **🔍 Real-time Search**: Filter notes instantly by title or tags
-- **🌓 Dark Mode**: Toggle between light and dark themes with persistent preferences
-- **💾 Offline Backup**: Automatic localStorage backup for offline functionality
-- **📱 Responsive Design**: Modern UI that works on all screen sizes
-- **⚡ Performance**: Optimized rendering and state management
-- **🎨 Enhanced UI**: Beautiful, modern interface with smooth animations
+- ** Real-time Search**: Filter notes instantly by title or tags
+- ** Dark Mode**: Toggle between light and dark themes with persistent preferences
+- ** Offline Backup**: Automatic localStorage backup for offline functionality
+- ** Responsive Design**: Modern UI that works on all screen sizes
+- ** Performance**: Optimized rendering and state management
+- ** Enhanced UI**: Beautiful, modern interface with smooth animations
 
 ## Prerequisites
 
